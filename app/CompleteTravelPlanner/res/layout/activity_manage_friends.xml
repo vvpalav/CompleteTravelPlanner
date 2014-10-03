@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/appcolor"
+    android:focusable="false"
+    android:focusableInTouchMode="false" >
+
+    <RelativeLayout
+        android:id="@+id/add_member_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip" >
+
+        <Button
+            android:id="@+id/add_member_et"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/round_button_shape"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/member_names_text"
+            android:textColor="@color/WhiteSmoke" >
+        </Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dashboard_list_relID"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/add_member_rl"
+        android:layout_margin="20dip"
+        android:background="@drawable/shape_bg" >
+
+        <ListView
+            android:id="@+id/trip_history_listID"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/newsfeed_divider"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/selectorlist" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

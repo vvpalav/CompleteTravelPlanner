@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appcolor"
+    android:orientation="vertical" 
+    android:focusable="false"
+    android:focusableInTouchMode="false" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dip" 
+                    >
+
+                    <ImageView
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
+                         android:onClick="manageTour"
+                        android:background="@drawable/tour_places" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="Tour Places"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                         android:onClick="manageTour"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/go_to_Friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dip" 
+                    android:onClick="manageMembers">
+
+                    <ImageView
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
+                        android:background="@drawable/friends" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="Friends"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dip" 
+                    android:onClick="managePhotoSharing">
+
+                    <ImageView
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
+                        android:background="@drawable/cloud_sharing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="Photo Sharing"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dip">
+
+                    <ImageView
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
+                        android:background="@drawable/checklist" 
+                          android:onClick="manageChecklist"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="Checklist"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" 
+                        android:onClick="manageChecklist"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dip" 
+                    android:onClick="manageChat">
+
+                    <ImageView
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
+                        android:background="@drawable/chat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="Chat"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dip" 
+                    android:onClick="manageExpenses">
+
+                    <ImageView
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
+                        android:background="@drawable/expense_sharing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="Expenses"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

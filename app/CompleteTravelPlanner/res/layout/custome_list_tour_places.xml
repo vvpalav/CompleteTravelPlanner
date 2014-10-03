@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+     <LinearLayout 
+       android:id="@+id/list_dash_progress_relID"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="10"
+       android:layout_marginTop="10dip"
+       android:layout_marginBottom="10dip"
+       android:layout_centerVertical="true"
+       android:layout_marginRight="60dip">
+        
+          <TextView 
+            android:id="@+id/list_tour_placesID"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dip"
+            android:textColor="@color/dashboard_listtext"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:maxLines="2"
+            android:layout_weight="10"
+            android:layout_gravity="center_vertical"
+            />
+      
+         
+     </LinearLayout>
+     
+     <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" 
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="10dip"
+       android:layout_centerInParent="true">
+        
+        <ImageView 
+            android:id="@+id/list_tourplaces_deleteBtnID"
+           	android:layout_width="wrap_content"
+       		android:layout_height="wrap_content" 
+       		android:src="@drawable/delete"
+       		 />
+    </LinearLayout>
+</RelativeLayout>

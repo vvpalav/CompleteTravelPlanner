@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="title_activity_login">Register</string>
+
+    <!-- Strings related to login -->
+    <string name="action_sign_in_register"><b>Register</b></string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_incorrect_code">This code is invalid</string>
+    <string name="error_incorrect_phone">This telephone is invalid</string>
+    <string name="error_field_required">This field is required</string>
+   	<string name="updateServer">Validating ...</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone With Country Code</string>
+    <string name="email">Email Address</string>
+    <string name="save">Save</string>
+    
+</resources>
